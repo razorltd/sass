@@ -1,11 +1,11 @@
-# Razor’s Front-end Coding Standards
+# `.razor-coding-standards--sass {`
 
 We use [Sass](http://sass-lang.com/) to write our CSS on all of our projects at Razor. Sass allows us to write styles that are more understandable and easier to maintain. It also allows us to separate our styles using partials, set up variables for flexibility, and mixins help make our styles reusable.
 
 We also regularly use the [Bootstrap 4](https://v4-alpha.getbootstrap.com/) framework to build our front-ends. It comes with Bootstrap’s source Sass files and enables us to create an attractive front-end quickly. Sometimes, Bootstrap can be too heavy for some projects and in this case we may choose not to use it at all or to only use parts of it. Even if we don’t use it, we can create some key principles for all of our projects from it.
 
 ## Key principles
-- Use [partials](#parials-architecture) well, don’t lumber everything in one big file.
+- Use [partials](#partials-architecture) well, don’t lumber everything in one big file.
 - Keep [class names](#class-naming) human and as simple as they can be. Use BEM when appropriate and describe the content, not the style.
 - Pay attention to [syntax and formatting](#syntax-and-formatting), we all need to work with each others code so this should be consistent across projects.
 - Be mindful of [nesting rules](#nesting-rules). Sass has many benefits but one of its draw backs is that it’s easy to nest too deeply. We want to stick to no more than three levels deep.
@@ -84,3 +84,5 @@ Fortunately, if our coding standards are followed correctly, this shouldn’t be
 
 
 🌈🦄💖 **Happy coding!** 💖🦄🌈
+
+# `}`
