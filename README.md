@@ -1,4 +1,4 @@
-# .razor-coding-standards--sass {
+# `.razor-coding-standards--sass {`
 
 We use [Sass](http://sass-lang.com/) to write our CSS on all of our projects at Razor. Sass allows us to write styles that are more understandable and easier to maintain. It also allows us to separate our styles using partials, set up variables for flexibility, and mixins help make our styles reusable.
 
@@ -85,4 +85,4 @@ Fortunately, if our coding standards are followed correctly, this shouldn’t be
 
 🌈🦄💖 **Happy coding!** 💖🦄🌈
 
-# }
+# `}`
