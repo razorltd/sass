@@ -22,7 +22,7 @@ These partials should only contain styles that are to be applied globally and sh
 
 Sometimes though, we may want to apply styles only to a specific page, in this case we would create a folder called **templates** and store page specific partials in there such as `_home.scss`, `_about.scss` etc. In these partials we may decide that we need to override elements defined before so these should always be called into `site.scss` after the interface element and site section partials. This way, we can easily avoid creating multiple classes for similar styles and having to define those styles multiple times. 
 
-![alt text](https://github.com/razorltd/sass/partials-screenshot.png “Partials structure”)
+![alt text](https://github.com/razorltd/sass/blob/master/partials-screenshot.png “Partials structure”)
 
 ## Class naming
 We should always strive not to give too specific class names to our elements. Keeping class names as simple as we can will make them readable for yourself and other front-end developers. Our CSS needs to be maintainable, reusable and as future-proof as possible.
