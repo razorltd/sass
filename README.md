@@ -14,13 +14,15 @@ We also regularly use the [Bootstrap 4](https://v4-alpha.getbootstrap.com/) fram
 
 
 ## Partials architecture
-- Place global styles such as `_typography.scss`, `_reset.scss` and `_base.scss` in a folder called **base**.
+- Place global partials such as `_typography.scss`, `_reset.scss` and `_base.scss` in a folder called **base**.
 - Split site sections into different partials (e.g. `_header.scss`, `_footer.scss`, `_sidebar.scss`, `_navigation.scss`, `_grid.scss`), put these in their own folder called **layout**.
 - Split interface elements into different partials (e.g. `_buttons.scss`, `_forms.scss`, `_tables.scss`), these should live in their own folder called **components**.
 
 These partials should only contain styles that are to be applied globally and should make up the bulk of our styles. Don’t apply class names like `case-study-heading` to them. We want the styles to be reusable. We might want to use that heading on multiple sections so a better class name might be `section-heading`.
 
 Sometimes though, we may want to apply styles only to a specific page, in this case we would create a folder called **templates** and store page specific partials in there such as `_home.scss`, `_about.scss` etc. In these partials we may decide that we need to override elements defined before so these should always be called into `site.scss` after the interface element and site section partials. This way, we can easily avoid creating multiple classes for similar styles and having to define those styles multiple times. 
+
+![alt text](https://github.com/razorltd/sass/partials-screenshot.png “Partials structure”)
 
 ## Class naming
 We should always strive not to give too specific class names to our elements. Keeping class names as simple as we can will make them readable for yourself and other front-end developers. Our CSS needs to be maintainable, reusable and as future-proof as possible.
@@ -53,7 +55,6 @@ footer {
 }
 
 // Not this //
-
 #header, #aside, #footer { background-color: $brand-primary; }
 
 ```
@@ -65,7 +66,7 @@ footer {
 ## Nesting rules
 Despite the many benefits of using Sass, it unfortunately makes it easy to nest too deeply. This can cause problems in older browsers but also make it more difficult for a front-end developer to read and make changes to styles. Therefore, we recommend you don’t nest more than three levels deep.
 
-Fortunately, if our coding standards are followed correctly, this shouldn’t be much of an issue and nesting issues will be easily avoidable.
+Fortunately, if our coding standards are followed correctly, this shouldn’t be much of an issue and nesting problems will be easily avoidable.
 
 ## Markup best practices
 - Take a minimal approach. Don’t use extra `div`, `span` etc if you don’t need to.
